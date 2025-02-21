@@ -8,7 +8,7 @@ A simple Bash wrapper for the MSVC vcvarsall.bat and MSYS2 msys2_shell.cmd scrip
 
 1. launch a MSYS2 Environment terminal from a shortcut in the Windows Start Menu (MSYS2 folder)
    or run `C:\msys64\msys2_shell.cmd` from a Command Prompt window or File Explorer
-1. source msys2-vcvars.sh from the terminal or the shell script requiring the vcvars
+1. source [msys2-vcvars.sh](msys2-vcvars.sh) from the terminal or the shell script requiring the vcvars
 1. call `vcvarsall` with the same arguments you would pass to vcvarsall.bat
    ([see here](https://learn.microsoft.com/en-us/cpp/build/building-on-the-command-line#vcvarsall-syntax))  
    `vcvarsall` returns 0 on success
