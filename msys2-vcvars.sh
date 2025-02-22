@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
 #==========================================================================================
-# MSYS2 MSVC environment import script by Raymond Luckhurst, Scriptit UK, https://scriptit.uk
-# GitHub: owner=scriptituk repository=msys2-mcvars https://github.com/scriptituk/msys2-mcvars
-# February 2025  MIT Licence
+# MSYS2 MSVC environment import tool by Raymond Luckhurst, Scriptit UK, https://scriptit.uk
+# GitHub: https://github.com/scriptituk/msys2-mcvars   February 2025   MIT Licence
 #==========================================================================================
 
 # Wrapper for MSVC vcvarsall.bat and MSYS2 msys2_shell.cmd scripts
 #
 # Inspired by script extractvcvars.sh from the OpenJDK project
-#     https://cr.openjdk.org/~erikj/build-infra5/webrev.01/common/bin/extractvcvars.sh.html
+#    https://cr.openjdk.org/~erikj/build-infra5/webrev.01/common/bin/extractvcvars.sh.html
 #
 # Imports VC++ path and environment variables for command-line builds into current process
 # Delegates to MSVC vcvarsall.bat (front end to VsDevCmd.bat) and MSYS2 msys2_shell.cmd scripts
@@ -30,10 +29,10 @@
 # because the full Windows %PATH% is inherited explicitly
 #
 # Notes:
-# 1.  source this file, don't exec it; the shebang is only for standalone testing
-#     similarly, call function vcvarsall inline, as command substitution will import nothing
-# 2.  this script uses find to locate vcvarsall.bat, not the complex vswhere.exe tool,
-#     or if set $VCVARSALL_PATH as the absolute path to vcvarsall.bat (Unix or Windows format)
+# 1. source this file, don't exec it; the shebang is only for standalone testing
+#    similarly, call function vcvarsall inline, as command substitution will import nothing
+# 2. this script uses find to locate vcvarsall.bat, not the complex vswhere.exe tool,
+#    or if set $VCVARSALL_PATH as the absolute path to vcvarsall.bat (Unix or Windows format)
 #
 # All commands used are in the standard msys2 install at /usr/bin: cygpath u2d cmd comm etc.
 #
