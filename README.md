@@ -43,5 +43,5 @@ Alternatively, set `VCVARSALL_PATH` to the absolute path of vcvarsall.bat (Unix 
 - [vcvarsall syntax](https://learn.microsoft.com/en-us/cpp/build/building-on-the-command-line#vcvarsall-syntax) – vcvarsall.bat parameters
 - [extractvcvars.sh](https://cr.openjdk.org/~erikj/build-infra5/webrev.01/common/bin/extractvcvars.sh.html) – the inspiration
 - [vcvars-bash](https://github.com/nathan818fr/vcvars-bash) – a similar tool
-- [ffmpeg-makexe.sh](https://github.com/scriptituk/ffmpeg-makexe/blob/ffmpeg-makexe.sh) – example usage (search for vcvars)
+- [ffmpeg-makexe.sh](https://github.com/scriptituk/ffmpeg-makexe/blob/main/ffmpeg-makexe.sh) – example usage (search for vcvars)
 
